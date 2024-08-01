@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App Project</title>
+    <link rel="stylesheet" href="Pstyles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Fitness App Project</h1>
+            <nav>
+                <ul>
+                    <li><a href="Main page.html">About Me</a></li>
+                    <li class="dropdown">
+                        <a href="Main page.html" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="Fitness app project.html">Fitness App</a>
+                            <a href="SQL Project.html">SQL</a>
+                            <a href="Python.html">Python</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="project-details">
+                <h2>Fitness App</h2>
+                <p>This is a fitness application I developed to track workouts, nutrition, and progress.</p>
+                <div class="image-grid">
+                    <img src="Media/Image_of_Fitness_app.png" alt="Fitness App page" class="screenshot" onclick="openModal(this)">
+                    <img src="Media/Workout added.png" alt="Fitness App workout added" class="screenshot" onclick="openModal(this)">
+                </div>
+                <a href="https://github.com/AliTahmid/Fitness-app.git" target="_blank">View on GitHub</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Mohammed Ali. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="Pscript.js"></script>
+</body>
+</html>

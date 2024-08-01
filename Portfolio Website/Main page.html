@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduction">About Me</a></li>
+                    <li class="dropdown">
+                        <a href="#projects" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="Fitness app project.html">Fitness App</a>
+                            <a href="SQL Project.html">SQL</a>
+                            <a href="python.html">Python</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="introduction">
+                <h2>About Me</h2>
+                <img src="Media/Profile.jpeg" alt="Profile Picture" class="screenshot" onclick="openModal(this)">
+                <p>Hello! I'm Tahmid, a passionate web developer. I love creating interactive and dynamic web applications using HTML, CSS, and JavaScript.
+                    I graduated last year with a degree in sports and exercise science. Currently I work in retail, 
+                    where I have developed strong customer service and teamwork skills. Recently I completed a 12 week Sofware development boot camp where I built a solid foundation in html, 
+                    JavaScript, SQL and python, and worked on several projects that enhanced my practical skills. 
+                    I am eager to leverage my newly acquired web development skills and my enthusiasm for technology to transition into web development role and contribute to a dynamic team 
+                </p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <!-- Add project details here -->
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>You can reach me at <a href="mailto:tahmid_ali@outlook.com">tahmid_ali@outlook.com</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Mohammed Ali. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

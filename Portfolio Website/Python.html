@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Project</title>
+    <link rel="stylesheet" href="Pstyles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Python Project</h1>
+            <nav>
+                <ul>
+                    <li><a href="Main page.html">About Me</a></li>
+                    <li class="dropdown">
+                        <a href="Main page.html#projects" class="dropbtn">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="Fitness app project.html">Fitness App</a>
+                            <a href="sql.html">SQL</a>
+                            <a href="python.html">Python</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="project-details">
+                <h2>Python Project</h2>
+                <p>This project demonstrates my skills in Python. Tasked to develop a python application to manipulate the FilmFlix database. To perform CRUD operation on the database from the python command line.</p>
+                <div class="image-grid">
+                    <img src="Media/Python code.png" alt="Python" class="screenshot">
+                    <img src="Media/Python Function code.png" alt="Functions" class="screenshot">
+                    <img src="Media/Terminal Python.png" alt="Terminal" class="screenshot">
+                </div>
+                <a href="https://github.com/AliTahmid/FilmFlix-Manager.git" target="_blank">View on GitHub</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Mohammed Ali. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="Pscript.js"></script>
+</body>
+</html>
+
